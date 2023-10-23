@@ -65,7 +65,7 @@ class InvalidCurrentPythonVersionError(EnvError):
         message = (
             f"Current Python version ({given}) "
             f"is not allowed by the project ({expected}).\n"
-            'Please change python executable via the "env use" command.'
+            'Please change python executable via the "poetry env use" command.'
         )
 
         super().__init__(message)
